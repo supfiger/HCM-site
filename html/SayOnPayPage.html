@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Say-on-Pay</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+
+        <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
+  </head>
+  <body>
+    <div class="page sayOnPayPage">
+      <header class="header">
+        <div class="container">
+          <section class="logoSection">
+            <div class="logo">
+              <img src="../img/logo.svg" alt="logo" class="unselectable">
+            </div>
+            <button class="headerNavDropdownButton unselectable">Menu</button>
+          </section>
+          <nav class="headerNav">
+            <ul>
+              <li>Say-on-Pay</li>
+              <li>Executive Board</li>
+              <li>Board of Directors</li>
+              <li>Voting Guidelines</li>
+              <li class="borderLine"></li>
+              <li>Logout</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <nav class="breadcrumbsNav">
+        <div class="container">
+          <ul>
+            <li>Home</li>
+            <li>></li>
+            <li class="breadcrumbsActiveItem">Say-on-Pay in Switzerland</li>
+          </ul>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="container">
+          <section class="selectedFiltersSection">
+            <div class="selectedCompanyBlock">
+              <h3>Selected</h3>
+              <ul>
+                <li class="selectedFilterItem unselectable">
+                  <span class="filterName">Company</span><span class="filterCross">×</span>
+                </li>
+              </ul>
+            </div>
+            <ul class="selectedFiltersList">
+              <li class="selectedFilterItem unselectable">
+                <span class="filterName">Group 1</span><span class="filterCross">×</span>
+              </li>
+              <li class="selectedFilterItem unselectable">
+                <span class="filterName">Group 1</span><span class="filterCross">×</span>
+              </li>
+              <li class="selectedFilterItem unselectable">
+                <span class="filterName">Group 1</span><span class="filterCross">×</span>
+              </li>
+              <li class="selectedFilterItem unselectable">
+                <span class="filterName">Group 1</span><span class="filterCross">×</span>
+              </li>
+              <li class="selectedFilterItem unselectable">
+                <span class="filterName">Group 1</span><span class="filterCross">×</span>
+              </li>
+              <li class="selectedFilterItem unselectable">
+                <span class="filterName">Group 1</span><span class="filterCross">×</span>
+              </li>
+            </ul>
+            <button class="filtersClearAllButton">Clear all</button>
+          </section>
+          <div class="asideAndMain">
+            <div class="filterDropdownBlock unselectable">
+              <div class="filterDropdownButton">
+                <span class="cross">×</span>
+                <span>Filter</span>
+              </div>
+              <button>Clear all</button>
+            </div>
+            <aside class="filtersAside">
+              <div class="filterBlock">
+                <h3>Select a company</h3>
+                <div class="selectWrapper">
+                  <select name="selectCompany">
+                    <option value="" selected="selected">Choose all</option>
+                    <option value="">Second</option>
+                    <option value="">Third</option>
+                    <option value="">Fourth</option>
+                  </select>
+                </div>
+              </div>
+              <div class="filterBlock">
+                <h3>Select a comparison group</h3>
+                <div class="selectWrapper">
+                  <select name="selectGroup">
+                    <option value="" selected="selected">Search</option>
+                    <option value="">Second</option>
+                    <option value="">Third</option>
+                    <option value="">Fourth</option>
+                  </select>
+                </div>
+                <div class="filterCheckboxesBlock">
+                  <ul class="filterCheckboxesList">
+                    <li>
+                      <label>
+                        <div class="checkboxWrap">
+                          <input type="checkbox" class="checkboxInput">
+                          <span class="checkMark"></span>
+                        </div>
+                        <div class="checkboxText">
+                          <span>Adecco</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <div class="checkboxWrap">
+                          <input type="checkbox" class="checkboxInput">
+                          <span class="checkMark"></span>
+                        </div>
+                        <div class="checkboxText">
+                          <span>Adecco</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <div class="checkboxWrap">
+                          <input type="checkbox" class="checkboxInput">
+                          <span class="checkMark"></span>
+                        </div>
+                        <div class="checkboxText">
+                          <span>Adecco</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <div class="checkboxWrap">
+                          <input type="checkbox" class="checkboxInput">
+                          <span class="checkMark"></span>
+                        </div>
+                        <div class="checkboxText">
+                          <span>Adecco</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <div class="checkboxWrap">
+                          <input type="checkbox" class="checkboxInput">
+                          <span class="checkMark"></span>
+                        </div>
+                        <div class="checkboxText">
+                          <span>Adecco</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <div class="checkboxWrap">
+                          <input type="checkbox" class="checkboxInput">
+                          <span class="checkMark"></span>
+                        </div>
+                        <div class="checkboxText">
+                          <span>Adecco</span>
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="filterCheckboxesList">
+                    <li>
+                      <label>
+                        <div class="checkboxWrap">
+                          <input type="checkbox" class="checkboxInput">
+                          <span class="checkMark"></span>
+                        </div>
+                        <div class="checkboxText">
+                          <span>gdfg</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <div class="checkboxWrap">
+                          <input type="checkbox" class="checkboxInput">
+                          <span class="checkMark"></span>
+                        </div>
+                        <div class="checkboxText">
+                          <span>213fdg</span>
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filterBlock">
+                <div class="filterBlockTop">
+                  <h3>Filter by</h3>
+                  <button class="filtersClearAllButton">Clear all</button>
+                </div>
+                <div class="filterSubBlock">
+                  <div class="filterTitle">
+                    <h4>Country</h4>
+                  </div>
+                  <div class="selectWrapper">
+                    <select name="selectCountry">
+                      <option value="" selected="selected">Switzerland</option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="filterSubBlock">
+                  <div class="filterTitle">
+                    <h4>Index</h4>
+                  </div>
+                  <div class="checkboxCards">
+                    <div class="checkboxCard unselectable">
+                      <img src="../img/checkmark.svg" class="checkboxCardCheckmark">
+                      <span>SMI</span>
+                    </div>
+                    <div class="checkboxCard unselectable">
+                      <img src="../img/checkmark.svg" class="checkboxCardCheckmark">
+                      <span>SMI</span>
+                    </div>
+                    <div class="checkboxCard unselectable">
+                      <img src="../img/checkmark.svg" class="checkboxCardCheckmark">
+                      <span>fsgsdgs</span>
+                    </div>
+                    <div class="checkboxCard unselectable">
+                      <img src="../img/checkmark.svg" class="checkboxCardCheckmark">
+                      <span>sdgdgdfgf</span>
+                    </div>
+                    <div class="checkboxCard unselectable">
+                      <img src="../img/checkmark.svg" class="checkboxCardCheckmark">
+                      <span>12312312 ds</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="filterSubBlock">
+                  <div class="filterTitle">
+                    <h4>Industry</h4>
+                    <button>
+                      <img class="arrowDropdownButton" src="../img/arrow-down.svg" alt="arrow">
+                    </button>
+                  </div>
+                  <div class="itemsDropdownBlock">
+                    <ul class="itemsDropdownList">
+                      <li>
+                        <label>
+                          <div class="checkboxWrap">
+                            <input type="checkbox" class="checkboxInput">
+                            <span class="checkMark"></span>
+                          </div>
+                          <div class="checkboxText">
+                            <span>Energy</span>
+                          </div>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <div class="checkboxWrap">
+                            <input type="checkbox" class="checkboxInput">
+                            <span class="checkMark"></span>
+                          </div>
+                          <div class="checkboxText">
+                            <span>Materials</span>
+                          </div>
+                        </label>
+                      </li>
+                    </ul>
+                    <button class="selectAllIndustriesButton">Select All</button>
+                  </div>
+                </div>
+                <div class="filterSubBlock">
+                  <div class="filterTitle" slider-title>
+                    <h4>Market Capitalization</h4>
+                    <span>(CHFm)</span>
+                  </div>
+                  <div class="rangeSliderBlock">
+                    <div class="rangeSlider" id="marketSlider">
+                      <div class="rangeSliderPips">
+                        <span class="startPip">0</span>
+                        <span class="EndPip">400 000</span>
+                      </div>
+                    </div>
+                    <div class="inputsBlock">
+                      <input type="number" placeholder="0" min="0" max="400000" class="rangeStartInput" step="1" pattern="[0-9]">
+                      <div class="borderLine">
+                        <div></div>
+                      </div>
+                      <input type="number" placeholder="400 000" min="0" max="400000" class="rangeEndInput" step="1" pattern="[0-9]">
+                    </div>
+                  </div>
+                </div>
+                <div class="filterSubBlock">
+                  <div class="filterTitle" slider-title>
+                    <h4>Revenue</h4>
+                    <span>(CHFm)</span>
+                  </div>
+                  <div class="rangeSliderBlock">
+                    <div class="rangeSlider" id="revenueSlider">
+                      <div class="rangeSliderPips">
+                        <span class="startPip">0</span>
+                        <span class="EndPip">200</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="applyFilterButton">Apply filters</button>
+              </div>
+            </aside>
+            <main class="diagramsMain main">
+              <ul class="diagramCardsList">
+                <li>
+                  <div class="topBlock">
+                    <h4>Advisory Say-on-Pay: Report / System / Level</h4>
+                    <img src="../img/filter-icon.svg" alt="filter icon" width="24" height="24">
+                  </div>
+                  <div class="diagramBlock">
+                    <span class="diagramValue">75%</span>
+                    <h5>Report/System/Level</h5>
+                  </div>
+                </li>
+                <li>
+                  <div class="topBlock">
+                    <h4>Binding Say-on-Pay: Board of Directors</h4>
+                    <img src="../img/filter-icon.svg" alt="filter icon" width="24" height="24">
+                  </div>
+                  <div class="diagramBlock">
+                    <span class="diagramValue">75%</span>
+                    <h5>Fixed compensation</h5>
+                    <p>Prospective AGM to AGM</p>
+                  </div>
+                  <div class="diagramBlock">
+                    <span class="diagramValue">75%</span>
+                    <h5>Variable compensation</h5>
+                    <p>Prospective current FY</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="topBlock">
+                    <h4>Title</h4>
+                    <img src="../img/filter-icon.svg" alt="filter icon" width="24" height="24">
+                  </div>
+                  <div class="diagramBlock">
+                    <span class="diagramValue">75%</span>
+                    <h5>Report/System/Level</h5>
+                  </div>
+                </li>
+                <li>
+                  <div class="topBlock">
+                    <h4>Title</h4>
+                    <img src="../img/filter-icon.svg" alt="filter icon" width="24" height="24">
+                  </div>
+                  <div class="diagramBlock">
+                    <span class="diagramValue">75%</span>
+                    <h5>Report/System/Level</h5>
+                  </div>
+                </li>
+              </ul>
+              <section class="selectDiagramSection">
+                <h2>Background information</h2>
+                <ul>
+                  <li>Annual Report 2019</li>
+                  <li>Annual Report 2019</li>
+                  <li>Annual Report 2019</li>
+                </ul>
+              </section>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.js"></script>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/SayOnPayPage.js"></script>
+  </body>
+</html>

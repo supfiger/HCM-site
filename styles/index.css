@@ -1,0 +1,1309 @@
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-Regular.ttf") format("truetype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-Medium.ttf") format("truetype");
+  font-weight: 500; }
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-Semibold.ttf") format("truetype");
+  font-weight: 600; }
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-Bold.ttf") format("truetype");
+  font-weight: 700; }
+
+button, .breadcrumbsNav, .filterDropdownBlock .filterDropdownButton, .checkboxCard, .rangeSliderBlock .noUi-handle, .inputsBlock .borderLine, .diagramCardsList li, .diagramBlock, .selectDiagramSection ul li, .lineBlock, .errorPageMain {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+body, .page, .content .container, .filtersAside, .filterBlock, .filterCheckboxesBlock, .filterSubBlock, .rangeSliderBlock, .diagramCardsList li, .selectDiagramSection, .signFormBlock, .signForm,
+.signFormItem, .errorPageErrorSection, .votingGuidelinesPage .main, .cardsSection, .cardsSection .card .cardInfo {
+  display: flex;
+  flex-direction: column; }
+
+.rangeSliderBlock .noUi-handle:after {
+  top: initial;
+  right: initial;
+  bottom: initial;
+  left: initial; }
+
+.cardsSection .ticket .ticketBorder {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.logoSection, .logo {
+  width: 100%;
+  height: 100%; }
+
+:export {
+  maxMobileBreakPoint: 576px;
+  maxTabletBreakPoint: 768px;
+  maxLaptopBreakPoint: 1400px; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  width: 100%;
+  min-height: 100vh; }
+
+body {
+  width: 100%;
+  min-height: 100vh; }
+
+body,
+button,
+input {
+  font-family: "Graphik";
+  line-height: 1 !important; }
+
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background: transparent;
+  cursor: pointer; }
+
+input {
+  margin: 0;
+  padding: 0; }
+
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none; }
+
+select::-ms-expand {
+  display: none; }
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+input:not([type="checkbox"]) {
+  background: transparent;
+  border: 1px solid #c4c4c4;
+  outline: none;
+  font-size: 14px;
+  padding: 10px 15px;
+  color: #333333; }
+
+.unselectable {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  not supported by any browser */ }
+
+.displayFlex {
+  display: flex !important; }
+
+.displayNone {
+  display: none !important; }
+
+.rotate180Deg {
+  transform: rotate(180deg); }
+
+.page {
+  min-height: 100vh;
+  height: 100%; }
+
+.container {
+  max-width: 1366px;
+  width: 100%;
+  padding: 0 25px;
+  display: flex;
+  align-items: center; }
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 50px; } }
+  @media (max-width: 576px) {
+    .container {
+      padding: 0 20px; } }
+
+.mainButton {
+  background-color: #bca15a; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 96px;
+  background-color: #175a51;
+  z-index: 10; }
+  @media (max-width: 991px) {
+    .header {
+      height: 64px; } }
+  .header .container {
+    padding-top: 8px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    position: relative; }
+
+@media (max-width: 991px) {
+  .headerNav {
+    display: none; } }
+
+.headerNav ul {
+  display: flex;
+  align-items: center; }
+  .headerNav ul li {
+    cursor: pointer;
+    margin-right: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8a8a8a; }
+    .headerNav ul li:last-child {
+      margin-right: 0; }
+
+@media (max-width: 991px) {
+  .headerNavDropdown {
+    display: flex;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 64px;
+    background-color: #175a51;
+    justify-content: center; } }
+
+.headerNavDropdown div {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+@media (max-width: 991px) {
+  .headerNavDropdown ul {
+    flex-direction: column;
+    padding: 24px 24px 33px;
+    z-index: 2; }
+    .headerNavDropdown ul li {
+      margin-bottom: 24px;
+      margin-right: 0; }
+      .headerNavDropdown ul li:last-child {
+        margin-bottom: 0;
+        margin-top: 24px; } }
+
+.headerNavActiveItem {
+  color: #a89f64 !important; }
+
+.headerNavDropdownButton {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8a8a8a;
+  cursor: pointer;
+  z-index: 3;
+  display: none; }
+  @media (max-width: 991px) {
+    .headerNavDropdownButton {
+      display: flex; } }
+
+.header .borderLine {
+  border-top: 1px solid #c4c4c480;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 24px !important;
+  bottom: 70px;
+  display: none; }
+  @media (max-width: 991px) {
+    .header .borderLine {
+      display: flex; } }
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  display: flex; }
+
+.logo {
+  display: flex;
+  cursor: pointer; }
+
+.breadcrumbsNav {
+  background-color: rgba(196, 196, 196, 0.4);
+  height: 58px; }
+  .breadcrumbsNav .container {
+    padding-top: 16px;
+    padding-bottom: 16px; }
+  .breadcrumbsNav ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex: 1; }
+    .breadcrumbsNav ul li {
+      font-size: 24px;
+      font-weight: 400;
+      color: #8a8a8a;
+      margin-right: 5px; }
+      .breadcrumbsNav ul li:last-child {
+        margin-right: 0; }
+      @media (max-width: 768px) {
+        .breadcrumbsNav ul li {
+          font-size: 14px; } }
+
+.breadcrumbsNav .breadcrumbsActiveItem {
+  font-weight: 600;
+  color: #8a8a8a; }
+
+.content {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  flex: 1; }
+  .content .container {
+    align-items: flex-start !important;
+    align-content: start; }
+
+.asideAndMain {
+  display: flex;
+  margin-top: 32px;
+  width: 100%; }
+  @media (max-width: 768px) {
+    .asideAndMain {
+      flex-direction: column;
+      margin-top: 26px; } }
+
+.selectedFiltersSection {
+  border-bottom: 1px solid #c4c4c4;
+  padding: 19px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex: 1;
+  flex-basis: 100%;
+  min-height: 58px;
+  width: 100%; }
+  @media (max-width: 768px) {
+    .selectedFiltersSection {
+      flex-direction: column;
+      padding: 0;
+      border: 0;
+      margin-top: 19px; } }
+  @media (max-width: 768px) {
+    .selectedFiltersSection .filtersClearAllButton {
+      display: none; } }
+
+.selectedCompanyBlock {
+  display: flex;
+  padding-right: 22px;
+  max-width: 220px; }
+  @media (max-width: 768px) {
+    .selectedCompanyBlock {
+      margin-bottom: 17px;
+      align-items: center; } }
+  @media (max-width: 768px) {
+    .selectedCompanyBlock li {
+      margin: 0; } }
+  .selectedCompanyBlock h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #8a8a8ab3;
+    margin-right: 15px; }
+    @media (max-width: 768px) {
+      .selectedCompanyBlock h3 {
+        font-size: 14px; } }
+
+.selectedFiltersList {
+  padding-left: 22px;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  flex-wrap: wrap;
+  border-left: 1.5px solid rgba(196, 196, 196, 0.5); }
+  @media (max-width: 768px) {
+    .selectedFiltersList {
+      border: 0;
+      border-bottom: 1.5px solid rgba(196, 196, 196, 0.5);
+      padding-left: 0;
+      padding-bottom: 7px;
+      justify-content: space-evenly; } }
+
+.selectedFilterItem {
+  background-color: rgba(188, 160, 90, 0.25);
+  padding: 0 12px 0 8px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  min-width: 78px;
+  min-height: 20px;
+  display: flex;
+  align-items: center; }
+  .selectedFilterItem .filterName {
+    font-size: 12px;
+    font-weight: 500;
+    color: #8a8a8ab3;
+    margin-right: 8px; }
+  .selectedFilterItem .filterCross {
+    font-size: 20px;
+    font-weight: 500;
+    color: #8a8a8a;
+    cursor: pointer; }
+  @media (max-width: 768px) {
+    .selectedFilterItem {
+      margin: 5px;
+      margin-bottom: 9px; } }
+
+.filtersClearAllButton {
+  font-size: 14px;
+  font-weight: 500;
+  color: #bca15a;
+  cursor: pointer;
+  margin-left: 15px; }
+
+.filterDropdownBlock {
+  display: none;
+  height: 40px;
+  background-color: #bca15a;
+  justify-content: space-between;
+  padding: 9px 28px; }
+  @media (max-width: 768px) {
+    .filterDropdownBlock {
+      margin: 0 -50px 25px; } }
+  @media (max-width: 576px) {
+    .filterDropdownBlock {
+      margin: 0 -20px 25px; } }
+  .filterDropdownBlock .filterDropdownButton {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7); }
+    .filterDropdownBlock .filterDropdownButton .cross {
+      display: flex;
+      margin-right: 12px;
+      font-size: 20px; }
+  .filterDropdownBlock button {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7); }
+  @media (max-width: 768px) {
+    .filterDropdownBlock {
+      display: flex; } }
+
+.filtersAside {
+  min-width: 220px;
+  max-width: 220px;
+  margin-right: 10px; }
+  @media (max-width: 768px) {
+    .filtersAside {
+      margin: 0;
+      width: 100%;
+      max-width: initial;
+      min-width: initial; } }
+
+.filterBlock {
+  margin-bottom: 25px;
+  width: 100%; }
+  .filterBlock h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 5px; }
+  .filterBlock select {
+    border: 1px solid #8a8a8ab3;
+    padding: 11px 10px 5px 7px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #8a8a8ab3;
+    cursor: pointer;
+    position: relative; }
+    .filterBlock select img {
+      position: absolute;
+      right: 0;
+      top: 0; }
+  .filterBlock .selectWrapper {
+    position: relative;
+    display: flex;
+    align-items: center; }
+    .filterBlock .selectWrapper::after {
+      display: flex;
+      position: absolute;
+      right: 10px;
+      content: " ";
+      background: url("../../img/arrow-down.svg") no-repeat center;
+      background-size: contain;
+      height: 8px;
+      width: 12px;
+      cursor: pointer; }
+  .filterBlock select:focus {
+    border-color: #bca15a; }
+
+.filterCheckboxesBlock {
+  border-bottom: 1.5px solid #8a8a8ab3;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 180px;
+  width: 100%;
+  box-sizing: content-box;
+  padding-bottom: 30px;
+  margin-top: 18px; }
+  .filterCheckboxesBlock::-webkit-scrollbar {
+    width: 6px;
+    height: 30px; }
+  .filterCheckboxesBlock::-webkit-scrollbar-track {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none; }
+  .filterCheckboxesBlock::-webkit-scrollbar-thumb {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: radial-gradient(73.42% 78.4% at 28.13% 71.46%, #dcdcdc 0%, rgba(138, 138, 138, 0.85) 100%);
+    transform: rotate(-90deg); }
+
+.filterBlockTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px; }
+  .filterBlockTop button {
+    margin-left: 15px; }
+
+.filterSubBlock {
+  margin-bottom: 25px; }
+
+.filterTitle {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center; }
+  .filterTitle[slider-title] {
+    margin-bottom: 35px; }
+  .filterTitle h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    margin-right: 5px; }
+  .filterTitle img {
+    cursor: pointer; }
+
+.checkboxCards {
+  display: flex;
+  flex-wrap: wrap; }
+
+.checkboxCard {
+  font-size: 12px;
+  font-weight: 500;
+  color: #8a8a8ab3;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 9px;
+  border: 1px solid #8a8a8ab3;
+  cursor: pointer; }
+
+.checkboxCardSelected {
+  border: 1px solid #bca15a;
+  font-size: 12px;
+  font-weight: 500;
+  color: #bca15a; }
+
+.checkboxCardCheckmark {
+  display: none;
+  margin-right: 5px;
+  line-height: 1;
+  font-weight: 600; }
+
+.itemsDropdownList {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 13px; }
+  .itemsDropdownList li {
+    margin-bottom: 9px;
+    line-height: 1; }
+    .itemsDropdownList li:last-of-type {
+      margin-bottom: 0; }
+    .itemsDropdownList li label {
+      display: flex;
+      align-items: center; }
+  .itemsDropdownList .checkboxText {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #8a8a8ab3; }
+
+.filterCheckboxesList {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #8a8a8ab3;
+  padding-top: 18px;
+  padding-bottom: 15px;
+  width: 90%; }
+  .filterCheckboxesList:first-of-type {
+    padding-top: 0; }
+  .filterCheckboxesList:last-of-type {
+    border: 0; }
+  .filterCheckboxesList li {
+    margin-bottom: 20px;
+    display: flex;
+    flex: 0 50%; }
+    .filterCheckboxesList li label {
+      display: flex;
+      align-items: flex-start;
+      line-height: 1; }
+
+.selectAllIndustriesButton {
+  background-color: rgba(196, 196, 196, 0.3);
+  padding: 9px 15px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #8a8a8a;
+  max-width: 120px; }
+
+.rangeSliderBlock .noUi-horizontal {
+  height: 2px; }
+
+.rangeSliderBlock .noUi-connect {
+  background-color: #bca15a; }
+
+.rangeSliderBlock .noUi-target {
+  box-shadow: none;
+  background-color: #c4c4c4; }
+
+.rangeSliderBlock .noUi-connects,
+.rangeSliderBlock .noUi-target {
+  border: 0;
+  border-radius: 0; }
+
+.rangeSliderBlock .noUi-connect,
+.rangeSliderBlock .noUi-origin {
+  left: initial;
+  width: calc(100% - 28px); }
+
+.rangeSliderBlock .noUi-origin {
+  display: flex;
+  align-items: center; }
+
+.rangeSliderBlock .noUi-origin:nth-of-type(2) {
+  left: 14px !important; }
+
+.rangeSliderBlock .noUi-origin:nth-of-type(3) {
+  right: 14px !important; }
+
+.rangeSliderBlock .noUi-base,
+.rangeSliderBlock .noUi-connects {
+  display: flex;
+  justify-content: center; }
+
+.rangeSliderBlock .noUi-handle {
+  width: 14px;
+  height: 14px;
+  top: initial;
+  border-radius: 0;
+  border: 1px solid #bca15a;
+  cursor: pointer; }
+  .rangeSliderBlock .noUi-handle:focus {
+    outline: none; }
+  .rangeSliderBlock .noUi-handle:before {
+    content: none; }
+  .rangeSliderBlock .noUi-handle:after {
+    background-color: #bca15a;
+    width: 70%;
+    height: 70%; }
+  .rangeSliderBlock .noUi-handle[data-handle="0"] {
+    right: 0px !important; }
+  .rangeSliderBlock .noUi-handle[data-handle="1"] {
+    right: -14px !important; }
+
+.rangeSlider {
+  margin-bottom: 15px;
+  position: relative; }
+
+.rangeSliderPips {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+  color: #8a8a8ab3;
+  width: 100%;
+  top: -22px; }
+
+.inputsBlock {
+  display: flex; }
+  .inputsBlock input {
+    font-size: 14px;
+    font-weight: 500;
+    color: #8a8a8ab3;
+    flex: 1;
+    width: 100%; }
+    .inputsBlock input::placeholder {
+      color: #8a8a8ab3; }
+  .inputsBlock .borderLine {
+    margin: 0 9px; }
+    .inputsBlock .borderLine div {
+      width: 5px;
+      height: 2px;
+      background-color: #8a8a8ab3; }
+
+.checkboxWrap {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+  display: flex; }
+
+.checkboxWrap .checkMark {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #bca15a;
+  display: inline-block;
+  background: #333333 url("../img/checkmark.png") center/1250% no-repeat;
+  transition: background-size 0.15s ease; }
+
+.checkboxInput:checked + .checkMark {
+  background-size: 60%;
+  transition: background-size 0.1s ease; }
+
+.checkboxText {
+  font-size: 14px;
+  font-weight: 400;
+  color: #c4c4c4;
+  flex: 1; }
+  .checkboxText a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #bca15a;
+    text-decoration: none; }
+
+.checkboxInput {
+  display: none; }
+
+.applyFilterButton {
+  background-color: #bca15a;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  padding: 5px 30px;
+  width: 100%;
+  text-transform: uppercase;
+  height: 31px; }
+
+.diagramCardsList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px; }
+  .diagramCardsList li {
+    margin: 12.5px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.09);
+    background-color: white;
+    min-height: 320px;
+    padding: 11px 16px;
+    max-width: 100%;
+    min-width: 440px;
+    flex-wrap: wrap;
+    flex: 1;
+    position: relative;
+    display: flex; }
+    @media (max-width: 768px) {
+      .diagramCardsList li {
+        min-width: 100%;
+        margin: 0;
+        margin-bottom: 10px; } }
+  .diagramCardsList .topBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 11px 16px; }
+    .diagramCardsList .topBlock h4 {
+      font-size: 14px;
+      font-weight: 500;
+      color: #333333; }
+    .diagramCardsList .topBlock img {
+      cursor: pointer; }
+
+.diagramBlock {
+  position: relative;
+  margin-bottom: 20px; }
+  .diagramBlock .diagramValue {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 3px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333; }
+  .diagramBlock h5 {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+    white-space: nowrap; }
+  .diagramBlock p {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #8a8a8ab3;
+    white-space: nowrap; }
+
+.selectDiagramSection {
+  margin: 0 12.5px; }
+  @media (max-width: 768px) {
+    .selectDiagramSection {
+      margin: 0; } }
+  .selectDiagramSection h2 {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #8a8a8a; }
+    @media (max-width: 768px) {
+      .selectDiagramSection h2 {
+        font-size: 22px; } }
+  .selectDiagramSection ul {
+    display: flex;
+    flex-wrap: wrap; }
+    .selectDiagramSection ul li {
+      font-size: 18px;
+      font-weight: 500;
+      color: #8a8a8ab3;
+      cursor: pointer;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #c4c4c4;
+      box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.05);
+      padding: 10px 20px;
+      min-width: 290px;
+      text-align: center; }
+      @media (max-width: 768px) {
+        .selectDiagramSection ul li {
+          min-width: initial;
+          max-width: initial;
+          width: 100%; } }
+
+.signPage {
+  background-color: #175a51;
+  padding: 80px 270px; }
+  @media (max-width: 1800px) {
+    .signPage {
+      padding: 80px 100px; } }
+  @media (max-width: 1400px) {
+    .signPage {
+      padding: 50px 30px 100px; } }
+  @media (max-width: 768px) {
+    .signPage {
+      padding: 0; } }
+
+.signPageContainer {
+  display: flex;
+  width: 100%; }
+  @media (max-width: 768px) {
+    .signPageContainer {
+      flex-direction: column; } }
+  @media (max-width: 576px) {
+    .signPageContainer {
+      flex-direction: column; } }
+
+.signPageLeftSection {
+  display: flex;
+  flex-direction: column;
+  flex: 558; }
+
+.signPageRightSection {
+  flex: 858; }
+
+.signPageImageBlock {
+  flex: 1;
+  background: linear-gradient(180deg, rgba(23, 90, 81, 0.35) 0%, rgba(23, 90, 81, 0.175) 44.3%, rgba(118, 175, 168, 0) 100%), url("../img/sign-background.jpg") no-repeat;
+  background-position: 35% 120%;
+  background-size: 280% 100%; }
+  @media (max-width: 768px) {
+    .signPageImageBlock {
+      flex: auto;
+      min-height: 300px;
+      background-position: 75% 45%;
+      background-size: 175% 145%; } }
+  @media (max-width: 576px) {
+    .signPageImageBlock {
+      flex: auto;
+      min-height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-position: 75% 45%;
+      background-size: 175% 145%; } }
+
+.signPageTitle {
+  font-size: 48px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.749);
+  padding-left: 47px;
+  padding-top: 110px;
+  width: 100%; }
+  @media (max-width: 1400px) {
+    .signPageTitle {
+      font-size: 30px; } }
+  @media (max-width: 768px) {
+    .signPageTitle {
+      font-size: 35px;
+      padding: 64px 20px 57px 20px;
+      text-align: center; } }
+  @media (max-width: 576px) {
+    .signPageTitle {
+      font-size: 24px;
+      padding: 64px 20px 57px 20px; } }
+
+.signPageLogo {
+  padding: 13px 0 13px 52px; }
+  @media (max-width: 1400px) {
+    .signPageLogo {
+      padding: 13px 30px; } }
+  @media (max-width: 768px) {
+    .signPageLogo {
+      padding: 10px 60px 10px 32px; } }
+  @media (max-width: 576px) {
+    .signPageLogo {
+      padding: 10px 60px 10px 32px; } }
+  @media (max-width: 1400px) {
+    .signPageLogo .logoImageBlock img {
+      max-width: 70px; } }
+  @media (max-width: 576px) {
+    .signPageLogo .logoImageBlock img {
+      max-width: 54px; } }
+  @media (max-width: 1400px) {
+    .signPageLogo .logoTitle {
+      font-size: 13px; } }
+  @media (max-width: 576px) {
+    .signPageLogo .logoTitle {
+      font-size: 11px; } }
+  @media (max-width: 1400px) {
+    .signPageLogo .logoSubtitle {
+      font-size: 11px; } }
+  @media (max-width: 576px) {
+    .signPageLogo .logoSubtitle {
+      font-size: 9px; } }
+
+.signFormBlock {
+  background-color: white;
+  height: 100%;
+  padding: 65px 35px 175px 138px; }
+  @media (max-width: 1400px) {
+    .signFormBlock {
+      padding: 64px 20px 80px; } }
+  @media (max-width: 768px) {
+    .signFormBlock {
+      padding: 50px 80px 50px;
+      align-items: center; } }
+  @media (max-width: 576px) {
+    .signFormBlock {
+      padding: 50px 20px 50px;
+      align-items: center; } }
+
+.signFormTopSection {
+  margin-bottom: 35px;
+  width: 100%; }
+
+.signPageBottomSection {
+  max-width: 400px; }
+  @media (max-width: 768px) {
+    .signPageBottomSection {
+      width: 100%;
+      max-width: 100%; } }
+
+.signFormLink {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+  margin-bottom: 55px; }
+  .signFormLink span {
+    margin-right: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #8a8a8a; }
+  .signFormLink a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #bca05ab3;
+    text-decoration: none;
+    line-height: 12px; }
+  @media (max-width: 768px) {
+    .signFormLink {
+      padding: 0;
+      line-height: 1; } }
+
+.formTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #8a8a8a; }
+
+.signGoogleButton {
+  padding: 8px 20px;
+  background-color: #175a51;
+  width: 100%;
+  margin-bottom: 32px; }
+  .signGoogleButton span:nth-child(1) {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-right: 40px; }
+  .signGoogleButton span:nth-child(2) {
+    font-size: 14px;
+    font-weight: 700;
+    color: white; }
+
+.lineBlock {
+  margin-bottom: 38px; }
+  .lineBlock span:nth-child(odd) {
+    border-bottom: 1px solid #175a5180;
+    display: flex;
+    flex: 1; }
+  .lineBlock span:nth-child(2) {
+    font-size: 14px;
+    font-weight: 500;
+    color: #8a8a8a;
+    padding: 0 25px; }
+
+.signFormItem {
+  margin-bottom: 32px;
+  position: relative; }
+  .signFormItem h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000b3;
+    margin-bottom: 8px; }
+  .signFormItem input::placeholder {
+    color: rgba(138, 138, 138, 0.3); }
+  .signFormItem:last-of-type {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row; }
+
+.signFormSubmitButton {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background: #bca15a;
+  padding: 20px 30px; }
+
+.passwordBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1;
+  margin-bottom: 8px; }
+  .passwordBlock h3 {
+    margin-bottom: 0; }
+  .passwordBlock span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #bca05ab3;
+    cursor: pointer; }
+
+.errorMessage {
+  font-size: 12px;
+  font-weight: 400;
+  color: red;
+  position: absolute;
+  bottom: -18px; }
+
+.errorPageMain {
+  flex: 1;
+  background: url("../img/ErrorPageBg.png") no-repeat;
+  background-size: cover; }
+
+.errorPageErrorSection {
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: calc(((58px + 96px) / 2)); }
+  .errorPageErrorSection h1 {
+    font-size: 288px;
+    font-weight: 500;
+    color: #bca05ab3;
+    margin-bottom: 70px; }
+    @media (max-width: 768px) {
+      .errorPageErrorSection h1 {
+        font-size: 160px;
+        margin-bottom: 50px; } }
+    @media (max-width: 576px) {
+      .errorPageErrorSection h1 {
+        font-size: 80px;
+        margin-bottom: 50px; } }
+  .errorPageErrorSection h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0a0303b3;
+    margin-bottom: 32px; }
+    @media (max-width: 1400px) {
+      .errorPageErrorSection h2 {
+        font-size: 20px; } }
+    @media (max-width: 991px) {
+      .errorPageErrorSection h2 {
+        font-size: 15px;
+        margin-bottom: 15px; } }
+  .errorPageErrorSection p {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(138, 138, 138, 0.3);
+    margin-bottom: 64px; }
+    @media (max-width: 1400px) {
+      .errorPageErrorSection p {
+        font-size: 14px;
+        margin-bottom: 50px; } }
+    @media (max-width: 991px) {
+      .errorPageErrorSection p {
+        font-size: 12px;
+        margin-bottom: 40px; } }
+  .errorPageErrorSection button {
+    max-width: 400px;
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    width: 100%; }
+
+.sayOnPayPage .checkboxWrap .checkMark {
+  background: initial;
+  transition: all 0.15s ease;
+  position: relative; }
+
+.sayOnPayPage .checkboxInput:checked + .checkMark {
+  background-size: initial; }
+  .sayOnPayPage .checkboxInput:checked + .checkMark::after {
+    content: " ";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background-color: #bca15a;
+    transition: all 0.1s ease; }
+
+.sayOnPayPage .filterCheckboxesList .checkboxText {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7); }
+
+.sayOnPayPage .checkboxTextActive {
+  font-size: 14px;
+  font-weight: 500;
+  color: #bca15a; }
+
+.votingGuidelinesPage .main {
+  flex: 1; }
+
+@media (max-width: 1400px) {
+  .votingGuidelinesPage .asideAndMain {
+    position: relative;
+    margin-bottom: 100px; } }
+
+.votingGuidelinesPage .breadcrumbsNav {
+  height: 32px; }
+  @media (max-width: 1400px) {
+    .votingGuidelinesPage .breadcrumbsNav .container {
+      height: 100%; } }
+
+.votingGuidelinesPage .filterBlock {
+  margin-bottom: 32px; }
+  @media (max-width: 1400px) {
+    .votingGuidelinesPage .filterBlock {
+      margin-bottom: 20px; } }
+
+.votingGuidelinesPage .filterSubBlock {
+  margin-bottom: 20px; }
+  @media (max-width: 1400px) {
+    .votingGuidelinesPage .filterSubBlock {
+      margin-bottom: 10px; } }
+  .votingGuidelinesPage .filterSubBlock:last-of-type {
+    margin-bottom: 0; }
+
+.votingGuidelinesPage .itemsDropdownList:last-of-type {
+  margin-bottom: 0; }
+
+.votingGuidelinesPage .filterBlockTop {
+  margin-bottom: 25px; }
+  .votingGuidelinesPage .filterBlockTop h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0; }
+
+.votingGuidelinesPage .filterTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+  .votingGuidelinesPage .filterTitle h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8a8a8ab3;
+    margin-right: 0; }
+  .votingGuidelinesPage .filterTitle button {
+    margin-left: 10px; }
+
+.votingGuidelinesPage .arrowButtonActive {
+  filter: invert(0%) sepia(49%) saturate(387%) hue-rotate(6deg) brightness(91%) contrast(85%); }
+
+.votingGuidelinesPage .filterTitleActive h4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #bca05ab3; }
+
+.votingGuidelinesPage .filterBlockTop {
+  align-items: flex-start; }
+
+.votingGuidelinesPage .itemsDropdownList li {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8a8a8ab3;
+  margin-left: 15px; }
+
+.votingGuidelinesPage .filterSelectItemBlock .filterBlockTop {
+  margin-bottom: 15px; }
+
+.votingGuidelinesPage .filterSelectItemBlock .itemsDropdownList li {
+  margin-left: 0;
+  font-size: 14px; }
+
+.votingGuidelinesPage li {
+  cursor: pointer; }
+
+.votingGuidelinesPage .liActiveItem {
+  color: #bca15a !important; }
+
+.votingGuidelinesPage .filtersAside {
+  margin-right: 20px; }
+  @media (max-width: 768px) {
+    .votingGuidelinesPage .filtersAside {
+      margin-right: 0;
+      margin-top: 80px; } }
+
+.cardsSection {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.09);
+  background-color: white;
+  min-height: 490px;
+  padding: 24px 30px 24px 16px;
+  width: 100%; }
+
+.cardsSection .card {
+  display: flex;
+  margin-bottom: 40px; }
+  @media (max-width: 768px) {
+    .cardsSection .card {
+      flex-direction: column; } }
+  .cardsSection .card .cardInfo {
+    flex: 1; }
+  .cardsSection .card .cardTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px; }
+  .cardsSection .card .cardText {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8a8a8ab3;
+    line-height: 21px; }
+
+.cardsSection .ticket {
+  position: relative;
+  padding: 15px;
+  width: 180px;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  z-index: 5; }
+  @media (max-width: 768px) {
+    .cardsSection .ticket {
+      margin-bottom: 15px; } }
+  .cardsSection .ticket .ticketTitle {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px; }
+  .cardsSection .ticket .ticketText {
+    display: flex;
+    flex: 1;
+    font-size: 12px;
+    font-weight: 400;
+    color: #bca15a; }
+  .cardsSection .ticket .ticketYear {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7); }
+  .cardsSection .ticket .ticketBorder {
+    position: absolute;
+    z-index: 4; }
+
+.searchSection {
+  display: flex;
+  margin-bottom: 40px; }
+  @media (max-width: 768px) {
+    .searchSection {
+      position: absolute;
+      display: flex;
+      top: 0;
+      right: 0;
+      left: 0;
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgba(196, 196, 196, 0.3); } }
+  .searchSection input {
+    flex: 1;
+    margin-right: 25px;
+    min-width: 180px; }
+    @media (max-width: 768px) {
+      .searchSection input {
+        margin-right: 15px; } }
+    .searchSection input::placeholder {
+      color: #8a8a8ab3; }
+  .searchSection button {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    padding: 10px 20px;
+    width: 200px; }
+    @media (max-width: 768px) {
+      .searchSection button {
+        padding: 10px; } }
+
+.svg-class svg {
+  fill: red; }

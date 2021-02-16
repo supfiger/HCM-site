@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
+  </head>
+  <body>
+    <div class="page signPage">
+      <div class="signPageContainer">
+        <section class="signPageLeftSection">
+          <div class="logo signPageLogo">
+            <div class="logoImageBlock">
+              <img src="../img/logo.png" alt="logo">
+            </div>
+            <section class="logoTitleSection">
+              <h3 class="logoTitle">Hostettler & Company</h3>
+              <h4 class="logoSubtitle">Governance. Risk. Compensation.</h4>
+            </section>
+          </div>
+          <div class="signPageImageBlock">
+            <h1 class="signPageTitle">
+              Compensation <br>
+              Intelligence & <br>
+              Analytics
+            </h1>
+          </div>
+        </section>
+        <section class="signPageRightSection">
+          <div class="signFormBlock">
+            <section class="signFormTopSection">
+              <div class="signFormLink">
+                <span>Don’t have an account?</span>
+                <a href="./SignUpPage.html">Sign up</a>
+              </div>
+              <h2 class="formTitle">HCM Compensation Intelligence & Analytics</h2>
+            </section>
+            <section class="signPageBottomSection">
+              <button class="signGoogleButton" onclick="">
+                <span>G</span>
+                <span>Sign in with Google</span>
+              </button>
+              <div class="lineBlock">
+                <span></span>
+                <span>Or</span>
+                <span></span>
+              </div>
+              <form action="#" method="POST" class="signForm signInForm">
+                <label class="signFormItem">
+                  <h3>Email address</h3>
+                  <input type="email" name="email" placeholder="hcm@gmail.com" required><span class="errorMessage"></span>
+                </label>
+                <label class="signFormItem">
+                  <div class="passwordBlock">
+                    <h3>Password</h3>
+                    <span onclick="">Forgot your password?</span>
+                  </div>
+                  <input type="password" name="password" placeholder="6+ characters" required><span class="errorMessage"></span>
+                </label>
+                <label type="checkbox" name="checkbox" class="signFormItem">
+                  <div class="checkboxWrap">
+                    <input type="checkbox" name="checkbox" class="checkboxInput">
+                    <span class="checkMark"></span>
+                  </div>
+                  <div class="checkboxText">
+                    <span>Keep me Logged in.</span>
+                  </div>
+                  <span class="errorMessage"></span>
+                </label>
+                <button type="submit" class="signFormSubmitButton">Log in</button>
+              </form>
+            </section>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="../js/signPage.js"></script>
+  </body>
+</html>
